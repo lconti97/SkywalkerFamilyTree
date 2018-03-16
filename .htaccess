@@ -4,4 +4,5 @@ RewriteEngine on
 
 # ErrorDocument 404 /error.php
 
-RewriteRule ^$ FamilyMember/familyMemberController.php?action=view [QSA,L]
+RewriteRule ^FamilyMember/view/$ FamilyMember/controller.php?action=view [QSA,L]
+RewriteRule ^FamilyMember/add/$ FamilyMember/controller.php?action=add [QSA,L]

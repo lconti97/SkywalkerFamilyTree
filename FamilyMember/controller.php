@@ -21,6 +21,12 @@ class FamilyMemberController {
                 $this->view($familyMemberName);
                 break;
 
+            case 'add':
+                $this->add();
+                break;
+
+            
+
 //TODO:
 //            case 'index':
 //                $this->index();
@@ -41,7 +47,7 @@ class FamilyMemberController {
         $pageTitle = 'Timeline';
         include_once SYSTEM_PATH . '/Navigation/header.html';
         if($name == 'Anakin Skywalker')
-            include_once SYSTEM_PATH.'/FamilyMember/timeline.html';
+            include_once SYSTEM_PATH.'/FamilyMember/view.html';
         include_once SYSTEM_PATH.'/Navigation/footer.html';
     }
 
@@ -53,12 +59,12 @@ class FamilyMemberController {
 //        include_once SYSTEM_PATH.'/view/footer.tpl';
 //    }
 //
-//    public function add() {
-//        $pageTitle = 'Add Family Member';
-//        include_once SYSTEM_PATH.'/view/header.tpl';
-//        include_once SYSTEM_PATH.'/view/addSoldier.tpl';
-//        include_once SYSTEM_PATH.'/view/footer.tpl';
-//    }
+   public function add() {
+       $pageTitle = 'Add Family Member';
+       include_once SYSTEM_PATH.'/view/header.tpl';
+       include_once SYSTEM_PATH.'/view/addSoldier.tpl';
+       include_once SYSTEM_PATH.'/view/footer.tpl';
+   }
 //
 //    public function addProcess() {
 //        $firstName = $_POST['first_name']; // required
