@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Family Member | Skywalker Family Tree</title>
+    <link href="../Common/styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="../Common/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="addfamilymember.js" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <a href="../Home/home.html">Home</a>
+        <a>|</a>
+        <a href="familytree.html">Skywalker family tree</a>
+        <a>|</a>
+        <a href="addfamilymember.html">Add family member</a>
+        <a>|</a>
+        <a href="">Help</a>
+        <a>|</a>
+        <a href="">Search</a>
+        <a>|</a>
+        <a href="../Login/login.html">Sign out</a>
+    </div>
+    <form class="container">
+        <h1>Add Family Member</h1>
+        <input type="text" placeholder="First Name" id="first-name-input">
+        <input type="text" placeholder="Last Name" id="last-name-input">
+        <input type="text" placeholder="Birth Year" id="birth-year-input">
+        <label for="birth-era-input">Birth era: </label>
+        <select id="birth-era-input">
+            <option>BBY</option>
+            <option>ABY</option>
+        </select>
+        <input type="text" placeholder="Death Year" id="death-year-input">
+        <label for="death-era-input">Death era: </label>
+        <select id="death-era-input">
+            <option>BBY</option>
+            <option>ABY</option>
+        </select>
+        <button type="button">Add Family Member</button>
+    </form>
+</body>
+</html>

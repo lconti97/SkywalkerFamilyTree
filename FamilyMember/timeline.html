@@ -1,0 +1,29 @@
+    <img src="../res/Anakin_Skywalker.png" height="360px"/> <!-- http://starwars.wikia.com/wiki/Anakin_Skywalker -->
+    <h1>Anakin Skywalker</h1>
+
+    <div class="timeline"></div>
+    <p id="description" hidden></p>
+
+    <form class="container">
+        <h1>Add Milestone</h1>
+        <div id="year-row">
+            <input type="text" placeholder="Year" id="year-input">
+            <label for="era-select">Era: </label>
+            <select id="era-select">
+                <option>BBY</option>
+                <option>ABY</option>
+            </select>
+        </div>
+        <h4 class="error" hidden id="add-milestone-year-error-message">Please enter a valid year.</h4>
+        <input type="text" placeholder="Title of Milestone" id="title-input">
+        <input type="text" placeholder="Description of Milestone" id="description-input">
+        <label for="alignment-input">Milestone alignment: </label>
+        <select id="alignment-input">
+            <option>Good</option>
+            <option>Neutral</option>
+            <option>Evil</option>
+        </select>
+        <button id="add-milestone-button" type="button">Add Milestone</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+Options -Indexes
+
+RewriteEngine on
+
+# ErrorDocument 404 /error.php
+
+RewriteRule ^$ FamilyMember/familyMemberController.php?action=view [QSA,L]
