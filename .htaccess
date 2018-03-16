@@ -4,5 +4,10 @@ RewriteEngine on
 
 # ErrorDocument 404 /error.php
 
+RewriteRule ^Home/$ Home/controller.php?action=index [QSA,L]
+
+RewriteRule ^Login/$ Login/controller.php?action=index [QSA,L]
+
 RewriteRule ^FamilyMember/view/$ FamilyMember/controller.php?action=view [QSA,L]
 RewriteRule ^FamilyMember/add/$ FamilyMember/controller.php?action=add [QSA,L]
+RewriteRule ^FamilyMember/$ FamilyMember/controller.php?action=index [QSA,L]
