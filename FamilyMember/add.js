@@ -1,7 +1,7 @@
-$(document).ready(function () {
-    $("button").on('click', signIn_onClick);
-});
+// $(document).ready(function () {
+//     $("button").on('click', addFamilyMember_onClick);
+// });
 
-function signIn_onClick() {
-    window.location = "timeline.html";
-}
+// function addFamilyMember_onClick() {
+//     window.location = "./view/";
+// }

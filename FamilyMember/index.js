@@ -3,5 +3,5 @@ $(document).ready(function () {
 });
 
 function familyTreeNode_onClick() {
-    window.location = "timeline.html";
+    window.location = "./view/";
 }

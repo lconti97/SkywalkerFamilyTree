@@ -1,7 +1,7 @@
-$(document).ready(function () {
-    $("button").on('click', signIn_onClick)
-});
+// $(document).ready(function () {
+//     $("button").on('click', signIn_onClick)
+// });
 
-function signIn_onClick() {
-    window.location = "../Home/home.html";
-}
+// function signIn_onClick() {
+//     window.location = "../home/";
+// }

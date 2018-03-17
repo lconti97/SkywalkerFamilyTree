@@ -4,9 +4,9 @@ $(document).ready(function () {
 });
 
 function familyTreeButton_onClick() {
-    window.location = "../FamilyMember/familytree.html";
+    window.location = "../FamilyMember/";
 }
 
 function addFamilyMember_onClick() {
-    window.location = "../FamilyMember/addfamilymember.html";
+    window.location = "../FamilyMember/add/";
 }
