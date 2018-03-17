@@ -4,10 +4,10 @@
     <div class="timeline"></div>
     <p id="description" hidden></p>
 
-    <form class="container">
+    <form class="container" action="<?= BASE_URL ?>/FamilyMember/add/process/" method="POST">
         <h1>Add Milestone</h1>
         <div id="year-row">
-            <input type="text" placeholder="Year" id="year-input">
+            <input type="text" placeholder="Year" id="year-input" name="year">
             <label for="era-select">Era: </label>
             <select id="era-select">
                 <option>BBY</option>
@@ -15,7 +15,7 @@
             </select>
         </div>
         <h4 class="error" hidden id="add-milestone-year-error-message">Please enter a valid year.</h4>
-        <input type="text" placeholder="Title of Milestone" id="title-input">
+        <input type="text" placeholder="Title of Milestone" id="title-input" name="title" required="required">
         <input type="text" placeholder="Description of Milestone" id="description-input">
         <label for="alignment-input">Milestone alignment: </label>
         <select id="alignment-input">
@@ -23,7 +23,7 @@
             <option>Neutral</option>
             <option>Evil</option>
         </select>
-        <button id="add-milestone-button" type="button">Add Milestone</button>
+        <button id="add-milestone-button" type="submit">Add Milestone</button>
     </form>
 </body>
 </html>

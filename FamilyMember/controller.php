@@ -18,13 +18,14 @@ class FamilyMemberController {
                 $familyMemberName = 'Anakin Skywalker';
                 $this->view($familyMemberName);
                 break;
-
             case 'add':
                 $this->add();
                 break;
-
             case 'index':
                 $this->index();
+                break;
+            case 'addProcess':
+                $this->addProcess();
                 break;
         }
     }
@@ -49,5 +50,10 @@ class FamilyMemberController {
        include_once SYSTEM_PATH . '/Navigation/header.html';
        include_once SYSTEM_PATH.'/FamilyMember/add.html';
        include_once SYSTEM_PATH.'/Navigation/footer.html';
+    }
+
+    public function addProcess() {
+        $title = $_POST['title'];
+        echo($title);
     }
 }
