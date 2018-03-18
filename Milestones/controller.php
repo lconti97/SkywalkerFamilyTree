@@ -37,7 +37,7 @@ class MilestoneController {
         $milestoneQueryFactory = new MilestoneQueryFactory();
         $milestoneQueryFactory->save($milestone);
 
-        header('Location: '.BASE_URL.'/FamilyMember/view/');
+        header('Location: '.BASE_URL.'/FamilyMember/index/');
         exit();
     }
 

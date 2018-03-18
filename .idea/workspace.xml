@@ -4,16 +4,13 @@
     <list default="true" id="428a02cd-c1d8-4330-978f-006623674346" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Common/scripts.js" afterPath="$PROJECT_DIR$/Common/scripts.js" />
-      <change beforePath="$PROJECT_DIR$/Common/styles.css" afterPath="$PROJECT_DIR$/Common/styles.css" />
-      <change beforePath="$PROJECT_DIR$/Database/DatabaseManager.class.php" afterPath="$PROJECT_DIR$/Database/DatabaseManager.class.php" />
-      <change beforePath="$PROJECT_DIR$/FamilyMember/FamilyMember.php" afterPath="$PROJECT_DIR$/FamilyMember/FamilyMember.php" />
       <change beforePath="$PROJECT_DIR$/FamilyMember/FamilyMemberQueryFactory.php" afterPath="$PROJECT_DIR$/FamilyMember/FamilyMemberQueryFactory.php" />
-      <change beforePath="$PROJECT_DIR$/FamilyMember/add.html" afterPath="$PROJECT_DIR$/FamilyMember/add.html" />
-      <change beforePath="$PROJECT_DIR$/FamilyMember/add.js" afterPath="$PROJECT_DIR$/FamilyMember/add.js" />
       <change beforePath="$PROJECT_DIR$/FamilyMember/controller.php" afterPath="$PROJECT_DIR$/FamilyMember/controller.php" />
-      <change beforePath="$PROJECT_DIR$/FamilyMember/view.html" afterPath="$PROJECT_DIR$/FamilyMember/view.html" />
+      <change beforePath="$PROJECT_DIR$/FamilyMember/index.html" afterPath="$PROJECT_DIR$/FamilyMember/index.html" />
+      <change beforePath="$PROJECT_DIR$/FamilyMember/index.js" afterPath="$PROJECT_DIR$/FamilyMember/index.js" />
       <change beforePath="$PROJECT_DIR$/FamilyMember/view.js" afterPath="$PROJECT_DIR$/FamilyMember/view.js" />
+      <change beforePath="$PROJECT_DIR$/Milestones/controller.php" afterPath="$PROJECT_DIR$/Milestones/controller.php" />
+      <change beforePath="$PROJECT_DIR$/Navigation/header.html" afterPath="$PROJECT_DIR$/Navigation/header.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,33 +36,73 @@
     <expand />
     <select />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="view.html" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/FamilyMember/view.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="189">
-                    <caret line="9" column="72" lean-forward="true" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
+      <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Milestones/controller.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="17" column="60" lean-forward="true" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+              <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FamilyMember/controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FamilyMember/view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FamilyMember/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FamilyMember/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FamilyMember/view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="26" column="74" lean-forward="false" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -74,22 +111,35 @@
       <file leaf-file-name="FamilyMemberQueryFactory.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FamilyMember/FamilyMemberQueryFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="65" lean-forward="true" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
+            <state relative-caret-position="220">
+              <caret line="23" column="79" lean-forward="false" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
               <folding>
-                <marker date="1521412894960" expanded="true" signature="276:308" ph="SELECT * FRO... %s" />
-                <marker date="1521412894960" expanded="true" signature="1188:1330" ph="INSERT INTO `%s`... " />
+                <marker date="1521414746345" expanded="true" signature="330:348" ph="SELECT * FRO... %s" />
+                <marker date="1521414746345" expanded="true" signature="1560:1702" ph="INSERT INTO `%s`... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseManager.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Database/DatabaseManager.class.php">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Navigation/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="42">
+              <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MilestoneQueryFactory.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Milestones/MilestoneQueryFactory.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="41" selection-end-column="27" />
+              <folding>
+                <marker date="1521404170804" expanded="true" signature="578:596" ph="SELECT * FRO... %s" />
+                <marker date="1521404170804" expanded="true" signature="1642:1769" ph="INSERT INTO `%s`... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,19 +194,21 @@
         <option value="$PROJECT_DIR$/Milestone.sql" />
         <option value="$PROJECT_DIR$/Milestones/MilestoneQueryFactory.class.php" />
         <option value="$PROJECT_DIR$/Milestones/scripts.js" />
-        <option value="$PROJECT_DIR$/Milestones/controller.php" />
-        <option value="$PROJECT_DIR$/Navigation/header.html" />
-        <option value="$PROJECT_DIR$/FamilyMember/view.js" />
         <option value="$PROJECT_DIR$/Common/scripts.js" />
         <option value="$PROJECT_DIR$/FamilyMember/view.html" />
         <option value="$PROJECT_DIR$/FamilyMember/add.js" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/FamilyMember/FamilyMember.php" />
         <option value="$PROJECT_DIR$/FamilyMember/add.html" />
         <option value="$PROJECT_DIR$/Common/styles.css" />
-        <option value="$PROJECT_DIR$/FamilyMember/controller.php" />
         <option value="$PROJECT_DIR$/Database/DatabaseManager.class.php" />
+        <option value="$PROJECT_DIR$/Milestones/controller.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/Navigation/header.html" />
+        <option value="$PROJECT_DIR$/FamilyMember/view.js" />
+        <option value="$PROJECT_DIR$/FamilyMember/index.html" />
         <option value="$PROJECT_DIR$/FamilyMember/FamilyMemberQueryFactory.php" />
+        <option value="$PROJECT_DIR$/FamilyMember/controller.php" />
+        <option value="$PROJECT_DIR$/FamilyMember/index.js" />
       </list>
     </option>
   </component>
@@ -318,7 +370,7 @@
       <workItem from="1521085911636" duration="128000" />
       <workItem from="1521086051338" duration="1497000" />
       <workItem from="1521334193187" duration="8505000" />
-      <workItem from="1521404336763" duration="8653000" />
+      <workItem from="1521404336763" duration="10908000" />
     </task>
     <task id="LOCAL-00001" summary="create get milestones endpoint">
       <created>1521339594311</created>
@@ -348,11 +400,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521410816567</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add Family Member post endpoint">
+      <created>1521413025831</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1521413025831</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61132000" />
+    <option name="totallyTimeSpent" value="63387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
@@ -389,7 +448,8 @@
     <MESSAGE value="Refactor Milestone GET endpoint" />
     <MESSAGE value="Use Jquery shorthand ajax" />
     <MESSAGE value="Add header through jquery" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add header through jquery" />
+    <MESSAGE value="Add Family Member post endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Family Member post endpoint" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -404,8 +464,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FamilyMember/timeline.js" />
-    <entry file="file://$PROJECT_DIR$/FamilyMember/timeline.html" />
     <entry file="file://$PROJECT_DIR$/FamilyMember/timeline.js" />
     <entry file="file://$PROJECT_DIR$/FamilyMember/timeline.html" />
     <entry file="file://$PROJECT_DIR$/Login/login.html" />
@@ -517,34 +575,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FamilyMember/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FamilyMember/add.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Navigation/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" lean-forward="true" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FamilyMember/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="72" lean-forward="true" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -557,38 +591,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FamilyMember/FamilyMember.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Milestones/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Milestones/MilestoneQueryFactory.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-284">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding>
-            <marker date="1521404170804" expanded="true" signature="578:596" ph="SELECT * FRO... %s" />
-            <marker date="1521404170804" expanded="true" signature="1642:1769" ph="INSERT INTO `%s`... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -600,37 +607,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FamilyMember/controller.php">
+    <entry file="file://$PROJECT_DIR$/Database/DatabaseManager.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="892">
-          <caret line="50" column="55" lean-forward="true" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+        <state relative-caret-position="430">
+          <caret line="33" column="73" lean-forward="false" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Database/DatabaseManager.class.php">
+    <entry file="file://$PROJECT_DIR$/FamilyMember/FamilyMember.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        <state relative-caret-position="231">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Navigation/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FamilyMember/FamilyMemberQueryFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="65" lean-forward="true" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
+        <state relative-caret-position="220">
+          <caret line="23" column="79" lean-forward="false" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
           <folding>
-            <marker date="1521412894960" expanded="true" signature="276:308" ph="SELECT * FRO... %s" />
-            <marker date="1521412894960" expanded="true" signature="1188:1330" ph="INSERT INTO `%s`... " />
+            <marker date="1521414746345" expanded="true" signature="330:348" ph="SELECT * FRO... %s" />
+            <marker date="1521414746345" expanded="true" signature="1560:1702" ph="INSERT INTO `%s`... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Milestones/MilestoneQueryFactory.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="41" selection-end-column="27" />
+          <folding>
+            <marker date="1521404170804" expanded="true" signature="578:596" ph="SELECT * FRO... %s" />
+            <marker date="1521404170804" expanded="true" signature="1642:1769" ph="INSERT INTO `%s`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FamilyMember/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="74" lean-forward="false" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FamilyMember/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FamilyMember/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Milestones/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="17" column="60" lean-forward="true" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FamilyMember/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FamilyMember/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding />
         </state>
       </provider>

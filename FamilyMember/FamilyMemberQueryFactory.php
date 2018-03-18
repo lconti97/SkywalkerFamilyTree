@@ -1,36 +1,41 @@
 <?php
 
 include_once('../Database/DatabaseManager.class.php');
+include_once('../FamilyMember/FamilyMember.php');
 
 class FamilyMemberQueryFactory
 {
     const DB_TABLE = 'family_member';
 
-    public function get($id)
+    public function get($id = 0)
     {
         $databaseManager = DatabaseManager::instance(); // connect to db
 
-        $queryString = sprintf("SELECT * FROM `%s` WHERE id = %d;",
-            self::DB_TABLE,
-            $id
-        );
+        $queryString = sprintf("SELECT * FROM `%s`", self::DB_TABLE);
+        if ($id != 0)
+            $queryString = $queryString.sprintf(' WHERE `familyMemberId` = %d', $id);
+        $queryString = $queryString.';';
 
         $result = $databaseManager->query($queryString);
 
-        if ($result->num_rows == 0) {
-            return null;
-        } else {
-            $row = $result->fetch_assoc(); // get results as associative array
+        $familyMembers = array();
 
-            $familyMember = new FamilyMember(); // instantiate new Soldier object
+        while($row = $result->fetch_assoc()) {
+            $familyMember = new FamilyMember(); // instantiate new FamilyMember object
 
             // store db results in local object
             $familyMember->id = $row['id'];
-            $familyMember->name = $row['name'];
-            $familyMember->alignment = $row['alignment'];
+            $familyMember->firstName = $row['firstName'];
+            $familyMember->lastName = $row['lastName'];
+            $familyMember->birthYear = $row['birthYear'];
+            $familyMember->birthEra = $row['birthEra'];
+            $familyMember->deathYear = $row['deathYear'];
+            $familyMember->deathEra = $row['deathEra'];
 
-            return $familyMember; // return the soldier
+            $familyMembers[] = $familyMember; // add the familyMember to the array
         }
+
+        return $familyMembers;
     }
 
     public function post($familyMember)
@@ -53,5 +58,8 @@ class FamilyMemberQueryFactory
 
         echo $queryString;
         $databaseManager->query($queryString); // execute query
+
+        header('Location: '.BASE_URL.'/FamilyMember/view/');
+        exit();
     }
 }

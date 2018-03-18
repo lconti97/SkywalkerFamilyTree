@@ -1,7 +1,24 @@
 $(document).ready(function () {
-   $(".family-tree-node").on('click', familyTreeNode_onClick);
+   loadHeader();
+
+   loadFamilyMembers();
 });
 
-function familyTreeNode_onClick() {
-    window.location = "./view/";
+function loadFamilyMembers() {
+    $.ajax({
+        url: 'FamilyMember/',
+        type: 'GET',
+        success: function (familyMembers) {
+            familyMembers.forEach(function (familyMember) {
+                addFamilyMember(familyMember);
+            })
+        }
+    })
+}
+
+function addFamilyMember(familyMember) {
+    var familyMemberHtml = '<li><div class="family-tree-node ' + familyMember.alignment + '"><h4>'
+        + familyMember.firstName + ' ' + familyMember.lastName + '</h4></div></li>';
+
+    $(familyMemberHtml).appendTo('#family-tree-root');
 }

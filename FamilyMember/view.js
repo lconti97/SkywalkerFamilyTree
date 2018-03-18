@@ -8,7 +8,6 @@ function loadMilestones(familyMemberId) {
     $.ajax({
         type: 'POST',
         url: 'Milestones?familyMemberId=1',
-        data: familyMemberId,
         success: function (results) {
             results.forEach(function (milestone) {
                 addMilestone(milestone.year, milestone.era, milestone.title, milestone.description, milestone.alignment);

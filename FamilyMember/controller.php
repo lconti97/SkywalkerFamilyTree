@@ -19,8 +19,8 @@ class FamilyMemberController
             case 'POST':
                 $this->post();
                 break;
-            case 'index':
-                $this->index();
+            case 'GET':
+                $this->get();
                 break;
             case 'addProcess':
                 $this->addProcess();
@@ -28,12 +28,13 @@ class FamilyMemberController
         }
     }
 
-    public function index()
+    public function get()
     {
-        $pageTitle = 'Family Tree';
-        include_once SYSTEM_PATH . '/Navigation/header.html';
-        include_once SYSTEM_PATH . '/FamilyMember/index.html';
-        include_once SYSTEM_PATH . '/Navigation/footer.html';
+        $familyMemberQueryFactory = new FamilyMemberQueryFactory();
+        $familyMembers = $familyMemberQueryFactory->get();
+
+        header('Content-Type: application/json');
+        echo json_encode($familyMembers);
     }
 
     public function post()
