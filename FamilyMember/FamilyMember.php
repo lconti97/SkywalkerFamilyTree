@@ -9,6 +9,10 @@
 class FamilyMember
 {
     public $id = 0;
-    public $name = '';
-    public $alignment = '';
+    public $firstName = '';
+    public $lastName = '';
+    public $birthYear = 0;
+    public $birthEra = '';
+    public $deathYear = 0;
+    public $deathEra = '';
 }
