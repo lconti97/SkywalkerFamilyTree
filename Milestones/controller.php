@@ -5,7 +5,7 @@ include_once 'Milestone.class.php';
 include_once 'MilestoneQueryFactory.class.php';
 
 // get the identifier for the page we want to load
-$action = $_GET['action'];
+$action = $_SERVER['REQUEST_METHOD'];
 
 $milestoneController = new MilestoneController();
 $milestoneController->route($action);
@@ -17,6 +17,9 @@ class MilestoneController {
         switch($action) {
             case 'addProcess':
                 $this->addProcess();
+                break;
+            case 'GET':
+                $this->get();
                 break;
         }
     }
@@ -36,5 +39,15 @@ class MilestoneController {
 
         header('Location: '.BASE_URL.'/FamilyMember/view/');
         exit();
+    }
+
+    public function get() {
+        $familyMemberId = $_GET['familyMemberId'];
+
+        $milestoneQueryFactory = new MilestoneQueryFactory();
+        $milestones = $milestoneQueryFactory->get(0, $familyMemberId);
+
+        header('Content-Type: application/json');
+        echo json_encode($milestones);
     }
 }

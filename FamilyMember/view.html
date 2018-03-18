@@ -1,36 +1,56 @@
-    <img src="<?= BASE_URL ?>/res/Anakin_Skywalker.png" height="360px"/> <!-- http://starwars.wikia.com/wiki/Anakin_Skywalker -->
-    <h1>Anakin Skywalker</h1>
-
-    <div class="timeline">
-        <?php foreach($milestones as $milestone): ?>
-            <div class= <?=sprintf("milestone %s", $milestone->alignment)?> >
-                <h4><?="$milestone->title"?></h4>
-            </div>
-        <?php endforeach; ?>
-    </div>
-    <p id="description" hidden></p>
-
-    <form class="container" action="<?= BASE_URL ?>/Milestones/add/process/" method="POST">
-        <h1>Add Milestone</h1>
-        <div id="year-row">
-            <input type="text" placeholder="Year" id="year-input" name="year" required="required">
-            <label for="era-select">Era: </label>
-            <select id="era-select" name="era" required="required">
-                <option>BBY</option>
-                <option>ABY</option>
-            </select>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Timeline | Skywalker Family Tree</title>
+        <base href="http://localhost/">
+        <link rel="stylesheet" type="text/css" href="Common/styles.css">
+        <script type="text/javascript" src="Common/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="FamilyMember/view.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <div>
+            <a href="Home/">Home</a>
+            <a>|</a>
+            <a href="FamilyMember/">Skywalker family tree</a>
+            <a>|</a>
+            <a href="FamilyMember/add/">Add family member</a>
+            <a>|</a>
+            <a href="">Help</a>
+            <a>|</a>
+            <a href="">Search</a>
+            <a>|</a>
+            <a href="Login/">Sign out</a>
         </div>
-        <h4 class="error" hidden id="add-milestone-year-error-message">Please enter a valid year.</h4>
-        <input type="text" placeholder="Title of Milestone" id="title-input" name="title" required="required">
-        <input type="text" placeholder="Description of Milestone" id="description-input" name="description" required="required">
-        <label for="alignment-input">Milestone alignment: </label>
-        <select id="alignment-input" name="alignment" required="required">
-            <option>Good</option>
-            <option>Neutral</option>
-            <option>Evil</option>
-        </select>
-        <input type="hidden" value="1" name="familyMemberId">
-        <button id="add-milestone-button" type="submit">Add Milestone</button>
-    </form>
-</body>
+            <img src="../../res/Anakin_Skywalker.png" height="360px"/> <!-- http://starwars.wikia.com/wiki/Anakin_Skywalker -->
+            <h1>Anakin Skywalker</h1>
+
+            <div class="timeline"></div>
+            <p id="description" hidden></p>
+
+            <form class="container" action="../../Milestones/add/process/" method="POST">
+                <h1>Add Milestone</h1>
+                <div id="year-row">
+                    <input type="text" placeholder="Year" id="year-input" name="year" required="required">
+                    <label for="era-select">Era: </label>
+                    <select id="era-select" name="era" required="required">
+                        <option>BBY</option>
+                        <option>ABY</option>
+                    </select>
+                </div>
+                <h4 class="error" hidden id="add-milestone-year-error-message">Please enter a valid year.</h4>
+                <input type="text" placeholder="Title of Milestone" id="title-input" name="title" required="required">
+                <input type="text" placeholder="Description of Milestone" id="description-input" name="description" required="required">
+                <label for="alignment-input">Milestone alignment: </label>
+                <select id="alignment-input" name="alignment" required="required">
+                    <option>Good</option>
+                    <option>Neutral</option>
+                    <option>Evil</option>
+                </select>
+                <input type="hidden" value="1" name="familyMemberId">
+                <button id="add-milestone-button" type="submit">Add Milestone</button>
+            </form>
+        <p>Made by Lucas Conti</p>
+    </body>
 </html>
