@@ -15,8 +15,8 @@ class MilestoneController {
     // route us to the appropriate class method for this action
     public function route($action) {
         switch($action) {
-            case 'addProcess':
-                $this->addProcess();
+            case 'POST':
+                $this->post();
                 break;
             case 'GET':
                 $this->get();
@@ -24,7 +24,7 @@ class MilestoneController {
         }
     }
 
-    public function addProcess() {
+    public function post() {
         $milestone = new Milestone();
 
         $milestone->year = $_POST['year'];

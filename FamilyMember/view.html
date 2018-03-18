@@ -23,16 +23,16 @@
             <a>|</a>
             <a href="Login/">Sign out</a>
         </div>
-            <img src="../../res/Anakin_Skywalker.png" height="360px"/> <!-- http://starwars.wikia.com/wiki/Anakin_Skywalker -->
+            <img src="res/Anakin_Skywalker.png" height="360px"/> <!-- http://starwars.wikia.com/wiki/Anakin_Skywalker -->
             <h1>Anakin Skywalker</h1>
 
             <div class="timeline"></div>
             <p id="description" hidden></p>
 
-            <form class="container" action="../../Milestones/add/process/" method="POST">
+            <form class="container" action="Milestones/" method="POST">
                 <h1>Add Milestone</h1>
                 <div id="year-row">
-                    <input type="text" placeholder="Year" id="year-input" name="year" required="required">
+                    <input type="number" placeholder="Year" id="year-input" name="year" required="required">
                     <label for="era-select">Era: </label>
                     <select id="era-select" name="era" required="required">
                         <option>BBY</option>
