@@ -1,7 +1,12 @@
 $(document).ready(function () {
+    loadHeader();
     var familyMemberId = getUrlParameter('id');
     loadMilestones(familyMemberId);
 });
+
+function loadHeader() {
+    $(".header").load('Navigation/header.html');
+}
 
 function getUrlParameter(key) {
     var url = new URL(window.location);
