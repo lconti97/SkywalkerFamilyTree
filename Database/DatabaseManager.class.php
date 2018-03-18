@@ -22,6 +22,14 @@ class DatabaseManager {
     return $result;
   }
 
+  public function save(){
+    if($this->id == 0) {
+      return $this->insert(); // soldier is new and needs to be created
+    } else {
+      return $this->update(); // soldier already exists and needs to be updated
+    }
+  }
+
   // escape any characters that could cause trouble for MySQL
   public function escape($string) {
     if($string == '') {

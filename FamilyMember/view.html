@@ -4,21 +4,21 @@
     <div class="timeline"></div>
     <p id="description" hidden></p>
 
-    <form class="container" action="<?= BASE_URL ?>/FamilyMember/add/process/" method="POST">
+    <form class="container" action="<?= BASE_URL ?>/Milestones/add/process/" method="POST">
         <h1>Add Milestone</h1>
         <div id="year-row">
-            <input type="text" placeholder="Year" id="year-input" name="year">
+            <input type="text" placeholder="Year" id="year-input" name="year" required="required">
             <label for="era-select">Era: </label>
-            <select id="era-select">
+            <select id="era-select" name="era" required="required">
                 <option>BBY</option>
                 <option>ABY</option>
             </select>
         </div>
         <h4 class="error" hidden id="add-milestone-year-error-message">Please enter a valid year.</h4>
         <input type="text" placeholder="Title of Milestone" id="title-input" name="title" required="required">
-        <input type="text" placeholder="Description of Milestone" id="description-input">
+        <input type="text" placeholder="Description of Milestone" id="description-input" name="description" required="required">
         <label for="alignment-input">Milestone alignment: </label>
-        <select id="alignment-input">
+        <select id="alignment-input" name="alignment" required="required">
             <option>Good</option>
             <option>Neutral</option>
             <option>Evil</option>

@@ -7,4 +7,4 @@ define('BASE_URL','http://localhost'); # your base URL
 define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_HOST', 'localhost');
-define('DB_DATABASE', '9thpa');
+define('DB_DATABASE', 'skywalker_family_tree');
