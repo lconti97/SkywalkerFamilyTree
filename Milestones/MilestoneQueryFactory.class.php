@@ -34,6 +34,7 @@ class MilestoneQueryFactory {
             $milestone->familyMemberId = $row['familyMemberId'];
             $milestone->era = $row['era'];
             $milestone->description = $row['description'];
+            $milestone->alignment = $row['alignment'];
 
             $milestones[] = $milestone; // add the milestone to the array
         }
@@ -44,16 +45,17 @@ class MilestoneQueryFactory {
     public function post($milestone) {
         $databaseManager = DatabaseManager::instance(); // connect to db
         
-        $queryString = sprintf("INSERT INTO `%s` (`year`, `era`, `title`, `description`, `alignment`)
-        VALUES (%s, %s, %s, %s, %s);",
+        $queryString = sprintf("INSERT INTO `%s` (`year`, `era`, `title`, `description`, `alignment`, `familyMemberId`)
+        VALUES (%s, %s, %s, %s, %s, %s);",
           self::DB_TABLE,
           $databaseManager->escape($milestone->year),
           $databaseManager->escape($milestone->era),
           $databaseManager->escape($milestone->title),
           $databaseManager->escape($milestone->description),
-          $databaseManager->escape($milestone->alignment)
+          $databaseManager->escape($milestone->alignment),
+          $databaseManager->escape($milestone->familyMemberId)
         );
-        
+
         $databaseManager->query($queryString); // execute query
         $milestone->id = $databaseManager->getInsertID(); // set the ID for the new object
     }

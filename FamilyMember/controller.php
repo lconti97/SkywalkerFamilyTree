@@ -35,12 +35,12 @@ class FamilyMemberController {
     public function view($id) {
         $milestoneQueryFactory = new MilestoneQueryFactory();
         $milestones = $milestoneQueryFactory->get(0, $id);
-        echo (count($milestones));
-//        $pageTitle = 'Timeline';
-//        include_once SYSTEM_PATH . '/Navigation/header.html';
-//        if($name == 'Anakin Skywalker')
-//            include_once SYSTEM_PATH.'/FamilyMember/view.html';
-//        include_once SYSTEM_PATH.'/Navigation/footer.html';
+
+        $pageTitle = 'Timeline';
+        include_once SYSTEM_PATH . '/Navigation/header.html';
+        if($id == 1)
+            include_once SYSTEM_PATH.'/FamilyMember/view.html';
+        include_once SYSTEM_PATH.'/Navigation/footer.html';
     }
 
    public function index() {

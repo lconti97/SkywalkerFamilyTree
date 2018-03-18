@@ -29,6 +29,7 @@ class MilestoneController {
         $milestone->title = $_POST['title'];
         $milestone->description = $_POST['description'];
         $milestone->alignment = $_POST['alignment'];
+        $milestone->familyMemberId = $_POST['familyMemberId'];
         
         $milestoneQueryFactory = new MilestoneQueryFactory();
         $milestoneQueryFactory->save($milestone);

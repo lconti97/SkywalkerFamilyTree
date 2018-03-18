@@ -1,7 +1,13 @@
     <img src="<?= BASE_URL ?>/res/Anakin_Skywalker.png" height="360px"/> <!-- http://starwars.wikia.com/wiki/Anakin_Skywalker -->
     <h1>Anakin Skywalker</h1>
 
-    <div class="timeline"></div>
+    <div class="timeline">
+        <?php foreach($milestones as $milestone): ?>
+            <div class= <?=sprintf("milestone %s", $milestone->alignment)?> >
+                <h4><?="$milestone->title"?></h4>
+            </div>
+        <?php endforeach; ?>
+    </div>
     <p id="description" hidden></p>
 
     <form class="container" action="<?= BASE_URL ?>/Milestones/add/process/" method="POST">
@@ -23,6 +29,7 @@
             <option>Neutral</option>
             <option>Evil</option>
         </select>
+        <input type="hidden" value="1" name="familyMemberId">
         <button id="add-milestone-button" type="submit">Add Milestone</button>
     </form>
 </body>
