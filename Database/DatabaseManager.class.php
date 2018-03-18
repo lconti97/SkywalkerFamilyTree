@@ -3,11 +3,11 @@
 class DatabaseManager {
 
   private static $_instance = null;
-  private $connection;
+  private $conn;
 
 	private function __construct() {
         $this->conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_DATABASE)
-                or die('Error: '.$connection->connect_error);
+                or die('Error: '.$conn->connect_error);
 	}
 
 	public static function instance() {

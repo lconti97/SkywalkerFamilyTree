@@ -1,6 +1,8 @@
 <?php
 
 include_once '../Common/global.php';
+include_once '../Milestones/MilestoneQueryFactory.class.php';
+include_once '../Milestones/Milestone.class.php';
 
 // get the identifier for the page we want to load
 $action = $_GET['action'];
@@ -15,8 +17,8 @@ class FamilyMemberController {
         switch($action) {
             case 'view':
                 # $familyMemberName = $_GET['name'];
-                $familyMemberName = 'Anakin Skywalker';
-                $this->view($familyMemberName);
+                $id = 1;
+                $this->view($id);
                 break;
             case 'add':
                 $this->add();
@@ -30,12 +32,15 @@ class FamilyMemberController {
         }
     }
 
-    public function view($name) {
-        $pageTitle = 'Timeline';
-        include_once SYSTEM_PATH . '/Navigation/header.html';
-        if($name == 'Anakin Skywalker')
-            include_once SYSTEM_PATH.'/FamilyMember/view.html';
-        include_once SYSTEM_PATH.'/Navigation/footer.html';
+    public function view($id) {
+        $milestoneQueryFactory = new MilestoneQueryFactory();
+        $milestones = $milestoneQueryFactory->get(0, $id);
+        echo (count($milestones));
+//        $pageTitle = 'Timeline';
+//        include_once SYSTEM_PATH . '/Navigation/header.html';
+//        if($name == 'Anakin Skywalker')
+//            include_once SYSTEM_PATH.'/FamilyMember/view.html';
+//        include_once SYSTEM_PATH.'/Navigation/footer.html';
     }
 
    public function index() {

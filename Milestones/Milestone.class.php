@@ -7,4 +7,5 @@ class Milestone {
     public $era = '';
     public $description = '';
     public $alignment = '';
+    public $familyMemberId = 0;
 }
