@@ -22,6 +22,9 @@ class FamilyMemberController
             case 'GET':
                 $this->get();
                 break;
+            case 'DELETE':
+                $this->delete();
+                break;
         }
     }
 
@@ -58,5 +61,14 @@ class FamilyMemberController
             $familyMemberQueryFactory->put($familyMember);
         else
             $familyMemberQueryFactory->post($familyMember);
+    }
+
+    public function delete() {
+        // Set up DELETE variables
+        parse_str(file_get_contents('php://input'), $_DELETE);
+
+        $id = $_DELETE['id'];
+        $familyMemberQueryFactory = new FamilyMemberQueryFactory();
+        $familyMemberQueryFactory->delete($id);
     }
 }

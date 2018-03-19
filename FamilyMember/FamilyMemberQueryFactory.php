@@ -56,7 +56,6 @@ class FamilyMemberQueryFactory
             $databaseManager->escape($familyMember->deathEra)
         );
 
-        echo $queryString;
         $databaseManager->query($queryString); // execute query
 
         header('Location: ' . BASE_URL . '/FamilyMember/view/');
@@ -85,10 +84,20 @@ class FamilyMemberQueryFactory
             $databaseManager->escape($familyMember->id)
         );
 
-        echo $queryString;
         $databaseManager->query($queryString); // execute query
 
         header('Location: ' . BASE_URL . '/FamilyMember/view/');
+        exit();
+    }
+
+    public function delete($id) {
+        $databaseManager = DatabaseManager::instance(); // connect to db
+
+        $queryString = sprintf("DELETE FROM `%s` WHERE `id` = %s;",
+            self::DB_TABLE,
+            $id);
+
+        $databaseManager->query($queryString); // execute query
         exit();
     }
 }
