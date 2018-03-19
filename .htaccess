@@ -4,17 +4,14 @@ RewriteEngine on
 
 # ErrorDocument 404 /error.php
 
-# RewriteRule ^Home/?$ Home/controller.php?action=index [QSA,L]
+RewriteRule ^Home/?$ Home/index.html [QSA,L]
 
-# RewriteRule ^Login/?$ Login/controller.php?action=index [QSA,L]
+RewriteRule ^Login/?$ Login/index.html [QSA,L]
 
 RewriteRule ^FamilyMember/view/?$ FamilyMember/view.html [QSA,L]
 RewriteRule ^FamilyMember/add/?$ FamilyMember/add.html [QSA,L]
 RewriteRule ^FamilyMember/index/?$ FamilyMember/index.html [QSA,L]
 RewriteRule ^FamilyMember/edit/?$ FamilyMember/edit.html [QSA,L]
 RewriteRule ^FamilyMember/?$ FamilyMember/controller.php [QSA,L]
-
-#RewriteRule ^FamilyMember/add/process/?$ FamilyMember/controller.php?action=addProcess [QSA,L]
-#RewriteRule ^FamilyMember/?$ FamilyMember/controller.php?action=index [QSA,L]
 
 RewriteRule ^Milestones/?$ Milestones/controller.php [QSA,L]

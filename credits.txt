@@ -1,0 +1,7 @@
+Libraries used:
+
+SweetAlerts: https://sweetalert.js.org/guides/
+
+Images used:
+Star wars background: http://www.4usky.com/data/out/88/164793469-stars-wallpapers.jpg
+Anakin Skywalker: http://starwars.wikia.com/wiki/Anakin_Skywalker

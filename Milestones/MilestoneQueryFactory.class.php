@@ -7,9 +7,7 @@ class MilestoneQueryFactory {
 
     public function save($milestone) {
         if($milestone->id == 0) {
-          return $this->post($milestone); // Milestone is new and needs to be created
-        } else {
-          return $this->patch($milestone); // Milestone already exists and needs to be updated
+            $this->post($milestone); // Milestone is new and needs to be created
         }
     }
 
@@ -58,9 +56,5 @@ class MilestoneQueryFactory {
 
         $databaseManager->query($queryString); // execute query
         $milestone->id = $databaseManager->getInsertID(); // set the ID for the new object
-    }
-
-    public function patch($milestone) {
-        // TODO
     }
 }
