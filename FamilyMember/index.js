@@ -17,8 +17,8 @@ function loadFamilyMembers() {
 }
 
 function addFamilyMember(familyMember) {
-    var familyMemberHtml = '<li><div class="family-tree-node ' + familyMember.alignment + '"><h4>'
-        + familyMember.firstName + ' ' + familyMember.lastName + '</h4></div></li>';
+    var familyMemberHtml = '<li><div class="family-tree-node ' + familyMember.alignment + '"><a href="FamilyMember/view?id=1" class="nav">'
+        + familyMember.firstName + ' ' + familyMember.lastName + '</a></div></li>';
 
     $(familyMemberHtml).appendTo('#family-tree-root');
 }
