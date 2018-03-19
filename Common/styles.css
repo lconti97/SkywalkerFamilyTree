@@ -8,6 +8,13 @@ a {
     color: white;
 }
 
+a.nav {
+    color: goldenrod;
+    display: block;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
 body {
     height: 100%;
 }

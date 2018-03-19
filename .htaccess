@@ -4,6 +4,8 @@ RewriteEngine on
 
 # ErrorDocument 404 /error.php
 
+RewriteRule ^cs3744/project3/lconti97 Home/index.html
+
 RewriteRule ^Home/?$ Home/index.html [QSA,L]
 
 RewriteRule ^Login/?$ Login/index.html [QSA,L]
