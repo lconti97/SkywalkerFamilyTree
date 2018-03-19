@@ -42,6 +42,11 @@ class FamilyMemberController
 
     public function post()
     {
+        if(!isLoggedIn()) {
+            header("HTTP/1.1 401 Unauthorized", false);
+            exit();
+        }
+
         $familyMember = new FamilyMember();
 
         $updateExistingRecord = array_key_exists('id', $_POST); //if an id is provided, the user intends to update an existing record
@@ -64,6 +69,11 @@ class FamilyMemberController
     }
 
     public function delete() {
+        if(!isLoggedIn()) {
+            header("HTTP/1.1 401 Unauthorized", false);
+            exit();
+        }
+
         // Set up DELETE variables
         parse_str(file_get_contents('php://input'), $_DELETE);
 

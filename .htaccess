@@ -8,7 +8,8 @@ RewriteRule ^cs3744/project3/lconti97 Home/index.html
 
 RewriteRule ^Home/?$ Home/index.html [QSA,L]
 
-RewriteRule ^Login/?$ Login/index.html [QSA,L]
+RewriteRule ^Login/index/?$ Login/index.html [QSA,L]
+RewriteRule ^Login/?$ Login/controller.php [QSA,L]
 
 RewriteRule ^FamilyMember/view/?$ FamilyMember/view.html [QSA,L]
 RewriteRule ^FamilyMember/add/?$ FamilyMember/add.html [QSA,L]

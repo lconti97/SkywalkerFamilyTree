@@ -12,14 +12,14 @@
     </head>
     <body>
         <div class="header"></div>
-        <form class="container" id="login">
+        <form class="container" id="login" action="Login/" method="POST">
             <h1>Sign In</h1>
-            <input type="text" placeholder="Username"/>
-            <input type="password" placeholder="Password"/>
+            <input type="text" placeholder="Username" name="username"/>
+            <input type="password" placeholder="Password" name="password"/>
             <label>
                 <input type="checkbox"/> Remember me
             </label>
-            <button type="button">Sign In</button>
+            <button type="submit">Sign In</button>
 
             <hr/>
 

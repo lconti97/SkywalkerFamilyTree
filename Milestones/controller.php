@@ -25,6 +25,11 @@ class MilestoneController {
     }
 
     public function post() {
+        if(!isLoggedIn()) {
+            header("HTTP/1.1 401 Unauthorized", false);
+            exit();
+        }
+
         $milestone = new Milestone();
 
         $milestone->year = $_POST['year'];
@@ -50,4 +55,6 @@ class MilestoneController {
         header('Content-Type: application/json');
         echo json_encode($milestones);
     }
+
+
 }
