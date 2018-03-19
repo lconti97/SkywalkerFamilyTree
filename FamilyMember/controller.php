@@ -22,9 +22,6 @@ class FamilyMemberController
             case 'GET':
                 $this->get();
                 break;
-            case 'addProcess':
-                $this->addProcess();
-                break;
         }
     }
 
@@ -34,12 +31,19 @@ class FamilyMemberController
         $familyMembers = $familyMemberQueryFactory->get();
 
         header('Content-Type: application/json');
-        echo json_encode($familyMembers);
+        if (count($familyMembers) == 1)
+            echo json_encode($familyMembers[0]);
+        else
+            echo json_encode($familyMembers);
     }
 
     public function post()
     {
         $familyMember = new FamilyMember();
+
+        $updateExistingRecord = array_key_exists('id', $_POST); //if an id is provided, the user intends to update an existing record
+        if ($updateExistingRecord)
+            $familyMember->id = $_POST['id'];
 
         $familyMember->firstName = $_POST['firstName'];
         $familyMember->lastName = $_POST['lastName'];
@@ -49,12 +53,10 @@ class FamilyMemberController
         $familyMember->deathEra = $_POST['deathEra'];
 
         $familyMemberQueryFactory = new FamilyMemberQueryFactory();
-        $familyMemberQueryFactory->post($familyMember);
-    }
 
-    public function addProcess()
-    {
-        $title = $_POST['title'];
-        echo($title);
+        if ($updateExistingRecord)
+            $familyMemberQueryFactory->put($familyMember);
+        else
+            $familyMemberQueryFactory->post($familyMember);
     }
 }

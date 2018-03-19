@@ -13,14 +13,14 @@ class FamilyMemberQueryFactory
 
         $queryString = sprintf("SELECT * FROM `%s`", self::DB_TABLE);
         if ($id != 0)
-            $queryString = $queryString.sprintf(' WHERE `familyMemberId` = %d', $id);
-        $queryString = $queryString.';';
+            $queryString = $queryString . sprintf(' WHERE `familyMemberId` = %d', $id);
+        $queryString = $queryString . ';';
 
         $result = $databaseManager->query($queryString);
 
         $familyMembers = array();
 
-        while($row = $result->fetch_assoc()) {
+        while ($row = $result->fetch_assoc()) {
             $familyMember = new FamilyMember(); // instantiate new FamilyMember object
 
             // store db results in local object
@@ -59,7 +59,36 @@ class FamilyMemberQueryFactory
         echo $queryString;
         $databaseManager->query($queryString); // execute query
 
-        header('Location: '.BASE_URL.'/FamilyMember/view/');
+        header('Location: ' . BASE_URL . '/FamilyMember/view/');
+        exit();
+    }
+
+    public function put($familyMember)
+    {
+        $databaseManager = DatabaseManager::instance(); // connect to db
+
+        $queryString = sprintf("UPDATE `%s` SET
+              `firstName` = %s,
+              `lastName` = %s,
+              `birthYear` = %s,
+              `birthEra` = %s,
+              `deathYear` = %s,
+              `deathEra` = %s
+              WHERE `id` = %d;",
+            self::DB_TABLE,
+            $databaseManager->escape($familyMember->firstName),
+            $databaseManager->escape($familyMember->lastName),
+            $databaseManager->escape($familyMember->birthYear),
+            $databaseManager->escape($familyMember->birthEra),
+            $databaseManager->escape($familyMember->deathYear),
+            $databaseManager->escape($familyMember->deathEra),
+            $databaseManager->escape($familyMember->id)
+        );
+
+        echo $queryString;
+        $databaseManager->query($queryString); // execute query
+
+        header('Location: ' . BASE_URL . '/FamilyMember/view/');
         exit();
     }
 }

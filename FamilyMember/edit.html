@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit | Skywalker Family Tree</title>
+    <base href="http://localhost/">
+    <link rel="stylesheet" type="text/css" href="Common/styles.css">
+    <script type="text/javascript" src="Common/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="FamilyMember/edit.js"></script>
+    <script type="text/javascript" src="Common/scripts.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <div class="header"></div>
+    <form class="container" action="FamilyMember/" method="POST">
+        <h1>Edit Family Member</h1>
+        <input type="hidden" name="id" value="1">
+        <input type="text" placeholder="First Name" id="first-name-input" name="firstName" required="required">
+        <input type="text" placeholder="Last Name" id="last-name-input" name="lastName" required="required">
+        <input type="number" placeholder="Birth Year" id="birth-year-input" name="birthYear" required="required">
+        <label for="birth-era-input">Birth era: </label>
+        <select id="birth-era-input" name="birthEra" required="required">
+            <option>BBY</option>
+            <option>ABY</option>
+        </select>
+        <input type="number" placeholder="Death Year" id="death-year-input" name="deathYear">
+        <label for="death-era-input">Death era: </label>
+        <select id="death-era-input" name="deathEra">
+            <option>N/A</option>
+            <option>BBY</option>
+            <option>ABY</option>
+        </select>
+        <button type="submit">Save changes</button>
+    </form>
+</body>
+</html>
